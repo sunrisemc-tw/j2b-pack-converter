@@ -44,35 +44,46 @@ def _rot_matrix(rx: float, ry: float, rz: float) -> np.ndarray:
     return mx @ my @ mz
 
 
-def _cube_faces(origin, size, tex_wh):
+def _cube_faces(origin, size, faces_uv, tex_wh):
     """產生一個 cube 的 6 面三角形頂點 (pos3, normal3, uv2)。
 
-    origin/size 為 Java element from/to（0..16 體素，Java 座標系）。uv 取整張貼圖 0..1
-    （icon 只需形狀與大致著色，不追求逐面精準 UV）。
+    origin/size 為已置中（減 8）的 Java 座標。faces_uv 為該 element 的 faces dict
+    （含每面 uv=[x1,y1,x2,y2]，0..16 空間）。tex_wh=(w,h) 貼圖實際像素尺寸，
+    用來把 0..16 UV 正規化到 0..1（Java face.uv 永遠 0..16，與解析度無關）。
     """
     fx, fy, fz = origin
     sx, sy, sz = size
     x0, y0, z0 = fx, fy, fz
     x1, y1, z1 = fx + sx, fy + sy, fz + sz
-    # 8 頂點
     v = [
         (x0, y0, z0), (x1, y0, z0), (x1, y1, z0), (x0, y1, z0),
         (x0, y0, z1), (x1, y0, z1), (x1, y1, z1), (x0, y1, z1),
     ]
+    # 每面：頂點索引（逆時針朝外）+ 法線 + Java 面名
     faces = [
-        ([4, 5, 6, 7], (0, 0, 1)),    # south +z
-        ([1, 0, 3, 2], (0, 0, -1)),   # north -z
-        ([5, 1, 2, 6], (1, 0, 0)),    # east +x
-        ([0, 4, 7, 3], (-1, 0, 0)),   # west -x
-        ([3, 7, 6, 2], (0, 1, 0)),    # up +y
-        ([0, 1, 5, 4], (0, -1, 0)),   # down -y
+        ([4, 5, 6, 7], (0, 0, 1), "south"),
+        ([1, 0, 3, 2], (0, 0, -1), "north"),
+        ([5, 1, 2, 6], (1, 0, 0), "east"),
+        ([0, 4, 7, 3], (-1, 0, 0), "west"),
+        ([3, 7, 6, 2], (0, 1, 0), "up"),
+        ([0, 1, 5, 4], (0, -1, 0), "down"),
     ]
-    uvq = [(0.0, 0.0), (1.0, 0.0), (1.0, 1.0), (0.0, 1.0)]
+    tw, th = tex_wh
     out: List[float] = []
-    for idx, normal in faces:
+    for idx, normal, fname in faces:
+        fdata = faces_uv.get(fname) if faces_uv else None
+        if fdata and "uv" in fdata:
+            ux0, uy0, ux1, uy1 = fdata["uv"]
+            # 0..16 -> 0..1（除以 16，非除以貼圖像素；MC UV 空間固定 16）
+            u0, u1 = ux0 / 16.0, ux1 / 16.0
+            vv0, vv1 = uy0 / 16.0, uy1 / 16.0
+        else:
+            u0, vv0, u1, vv1 = 0.0, 0.0, 1.0, 1.0
+        # quad 四角對應 uv：(u0,v0)(u1,v0)(u1,v1)(u0,v1)
         quad = [v[i] for i in idx]
+        quaduv = [(u0, vv0), (u1, vv0), (u1, vv1), (u0, vv1)]
         tri = [quad[0], quad[1], quad[2], quad[0], quad[2], quad[3]]
-        triuv = [uvq[0], uvq[1], uvq[2], uvq[0], uvq[2], uvq[3]]
+        triuv = [quaduv[0], quaduv[1], quaduv[2], quaduv[0], quaduv[2], quaduv[3]]
         for p, uv in zip(tri, triuv):
             out.extend([p[0], p[1], p[2], normal[0], normal[1], normal[2], uv[0], uv[1]])
     return out
@@ -124,36 +135,56 @@ def _ortho(scale: float) -> np.ndarray:
 
 
 def render_icon(ctx, prog, model_elements, texture_path, display_gui) -> Optional["Image.Image"]:
-    """渲染單一模型 icon，回傳裁切後的 PIL Image（透明背景）或 None。"""
-    # 準備頂點（模型置中到原點：減去 8,8,8）
+    """渲染單一模型 icon，回傳裁切後的 PIL Image（透明背景）或 None。
+
+    複製 MC item-GUI 管線：模型空間 0..16，置中到原點（減 8）。
+    display.gui 提供 translation(/16)、rotation(度, Z·Y·X)、scale。
+    MC GUI 視角：物件先套 display.gui 變換，再以正交投影從 +Z 看向 -Z，Y 朝上。
+    注意：item 沒有 block 的 (30,225,0) 基準旋轉——槍的 display.gui 已是完整視角。
+    """
+    # 貼圖先載入（要尺寸給 UV 正規化用）
+    if texture_path and os.path.exists(texture_path):
+        img = Image.open(texture_path).convert("RGBA")
+    else:
+        img = Image.new("RGBA", (16, 16), (180, 180, 180, 255))
+    tex_wh = img.size
+
     verts: List[float] = []
     for el in model_elements:
         origin = [el["from"][0] - 8.0, el["from"][1] - 8.0, el["from"][2] - 8.0]
         size = [el["to"][i] - el["from"][i] for i in range(3)]
-        verts.extend(_cube_faces(origin, size, (16, 16)))
+        verts.extend(_cube_faces(origin, size, el.get("faces", {}), tex_wh))
     if not verts:
         return None
     vbo = ctx.buffer(np.array(verts, dtype="f4").tobytes())
     vao = ctx.vertex_array(prog, [(vbo, "3f 3f 2f", "in_pos", "in_norm", "in_uv")])
 
-    # 貼圖
-    if texture_path and os.path.exists(texture_path):
-        img = Image.open(texture_path).convert("RGBA")
-    else:
-        img = Image.new("RGBA", (16, 16), (180, 180, 180, 255))
     tex = ctx.texture(img.size, 4, img.tobytes())
     tex.filter = (moderngl.NEAREST, moderngl.NEAREST)
     tex.use(0)
     prog["tex"].value = 0
 
-    # 變換：base 等角視角 + display.gui 自訂
-    gui_rot = display_gui.get("rotation", [0, 0, 0]) if display_gui else [0, 0, 0]
-    gui_scale = display_gui.get("scale", [1, 1, 1]) if display_gui else [1, 1, 1]
-    rot = _rot_matrix(*_GUI_BASE_ROT) @ _rot_matrix(gui_rot[0], gui_rot[1], gui_rot[2])
-    model_m = np.identity(4, dtype="f4")
-    model_m[:3, :3] = rot * float(gui_scale[0] if gui_scale else 1.0)
+    gui = display_gui or {}
+    gui_rot = gui.get("rotation", [0, 0, 0]) or [0, 0, 0]
+    gui_trans = gui.get("translation", [0, 0, 0]) or [0, 0, 0]
+    gui_scale = gui.get("scale", [1, 1, 1]) or [1, 1, 1]
 
-    mvp = _ortho(12.0) @ model_m
+    rot = _rot_matrix(gui_rot[0], gui_rot[1], gui_rot[2])
+    # 4x4 model：scale -> rotate -> translate（MC 順序，translation 單位是體素/16*16=體素）
+    model_m = np.identity(4, dtype="f4")
+    sc = np.identity(4, dtype="f4")
+    for i in range(3):
+        sc[i, i] = float(gui_scale[i])
+    rm = np.identity(4, dtype="f4")
+    rm[:3, :3] = rot
+    tm = np.identity(4, dtype="f4")
+    # display.translation 單位為 1/16 格；模型空間 1 體素=1，故 ×1（translation 本就體素）
+    tm[0, 3] = float(gui_trans[0])
+    tm[1, 3] = float(gui_trans[1])
+    tm[2, 3] = float(gui_trans[2])
+    model_m = tm @ rm @ sc
+
+    mvp = _ortho(11.0) @ model_m
     prog["mvp"].write(np.ascontiguousarray(mvp.T, dtype="f4").tobytes())
     prog["nrm"].write(np.ascontiguousarray(rot, dtype="f4").tobytes())
 
