@@ -1,0 +1,957 @@
+{
+  "format_version": 2,
+  "items": {
+    "minecraft:crossbow": [
+      {
+        "bedrock_identifier": "qualityarmory:gun/aa12",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_aa12_icon"
+        },
+        "custom_model_data": 18,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/ak47",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_ak47_icon"
+        },
+        "custom_model_data": 4,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/ak47u",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_ak47u_icon"
+        },
+        "custom_model_data": 5,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/aliens",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_aliens_icon"
+        },
+        "custom_model_data": 37,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/arcgun",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_arcgun_icon"
+        },
+        "custom_model_data": 39,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/asval",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_asval_icon"
+        },
+        "custom_model_data": 58,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/auto9",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_auto9_icon"
+        },
+        "custom_model_data": 38,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/awp",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_awp_icon"
+        },
+        "custom_model_data": 20,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/awp2",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_awp2_icon"
+        },
+        "custom_model_data": 24,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/barrett",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_barrett_icon"
+        },
+        "custom_model_data": 52,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/dp27",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_dp27_icon"
+        },
+        "custom_model_data": 28,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/dragunov",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_dragunov_icon"
+        },
+        "custom_model_data": 16,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/enfield",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_enfield_icon"
+        },
+        "custom_model_data": 13,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/famas",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_famas_icon"
+        },
+        "custom_model_data": 64,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/fatman",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_fatman_icon"
+        },
+        "custom_model_data": 33,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/fnfal",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_fnfal_icon"
+        },
+        "custom_model_data": 8,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/fnp90",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_fnp90_icon"
+        },
+        "custom_model_data": 59,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/fo10mm",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_fo10mm_icon"
+        },
+        "custom_model_data": 34,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/halo",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_halo_icon"
+        },
+        "custom_model_data": 40,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/homingrpg",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_homingrpg_icon"
+        },
+        "custom_model_data": 30,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/instituterifle",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_instituterifle_icon"
+        },
+        "custom_model_data": 35,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/kar98k",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_kar98k_icon"
+        },
+        "custom_model_data": 60,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/lazerrifle",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_lazerrifle_icon"
+        },
+        "custom_model_data": 32,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/m16",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_m16_icon"
+        },
+        "custom_model_data": 6,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/m40",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_m40_icon"
+        },
+        "custom_model_data": 12,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/m4a1s",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_m4a1s_icon"
+        },
+        "custom_model_data": 25,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/m79",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_m79_icon"
+        },
+        "custom_model_data": 55,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/mac10",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_mac10_icon"
+        },
+        "custom_model_data": 48,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/magnum",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_magnum_icon"
+        },
+        "custom_model_data": 19,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/makarov",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_makarov_icon"
+        },
+        "custom_model_data": 53,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/mark19",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_mark19_icon"
+        },
+        "custom_model_data": 57,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/mauser",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_mauser_icon"
+        },
+        "custom_model_data": 14,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/minigun",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_minigun_icon"
+        },
+        "custom_model_data": 56,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/mp40",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_mp40_icon"
+        },
+        "custom_model_data": 61,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/mp5",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_mp5_icon"
+        },
+        "custom_model_data": 3,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/musketpistol",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_musketpistol_icon"
+        },
+        "custom_model_data": 31,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/musketrifle",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_musketrifle_icon"
+        },
+        "custom_model_data": 36,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/needler",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_needler_icon"
+        },
+        "custom_model_data": 41,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/overwatchpulsegun",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_overwatchpulsegun_icon"
+        },
+        "custom_model_data": 44,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/p30",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_p30_icon"
+        },
+        "custom_model_data": 1,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/p30sil",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_p30sil_icon"
+        },
+        "custom_model_data": 23,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/pkp",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_pkp_icon"
+        },
+        "custom_model_data": 2,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/ppsh41",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_ppsh41_icon"
+        },
+        "custom_model_data": 54,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/remmington",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_remmington_icon"
+        },
+        "custom_model_data": 7,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/rpg",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_rpg_icon"
+        },
+        "custom_model_data": 9,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/rpk",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_rpk_icon"
+        },
+        "custom_model_data": 26,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/sawshotgun",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_sawshotgun_icon"
+        },
+        "custom_model_data": 63,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/sg553",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_sg553_icon"
+        },
+        "custom_model_data": 27,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/skorpion",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_skorpion_icon"
+        },
+        "custom_model_data": 50,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/sks",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_sks_icon"
+        },
+        "custom_model_data": 51,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/spas",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_spas_icon"
+        },
+        "custom_model_data": 17,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/stg44",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_stg44_icon"
+        },
+        "custom_model_data": 62,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/sw1911",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_sw1911_icon"
+        },
+        "custom_model_data": 11,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/swblaster",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_swblaster_icon"
+        },
+        "custom_model_data": 43,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/thatgun",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_thatgun_icon"
+        },
+        "custom_model_data": 42,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/ump",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_ump_icon"
+        },
+        "custom_model_data": 10,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/uzi",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_uzi_icon"
+        },
+        "custom_model_data": 49,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:gun/vera",
+        "bedrock_options": {
+          "icon": "qualityarmory.gun_vera_icon"
+        },
+        "custom_model_data": 45,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:melee/lightsaberblue",
+        "bedrock_options": {
+          "icon": "qualityarmory.melee_lightsaberblue_icon"
+        },
+        "custom_model_data": 46,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:melee/lightsaberred",
+        "bedrock_options": {
+          "icon": "qualityarmory.melee_lightsaberred_icon"
+        },
+        "custom_model_data": 47,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:misc/flashbang",
+        "bedrock_options": {
+          "icon": "qualityarmory.misc_flashbang_icon"
+        },
+        "custom_model_data": 22,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:misc/grenade",
+        "bedrock_options": {
+          "icon": "qualityarmory.misc_grenade_icon"
+        },
+        "custom_model_data": 15,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:misc/incendarygrenade",
+        "bedrock_options": {
+          "icon": "qualityarmory.misc_incendarygrenade_icon"
+        },
+        "custom_model_data": 29,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:misc/smokegrenade",
+        "bedrock_options": {
+          "icon": "qualityarmory.misc_smokegrenade_icon"
+        },
+        "custom_model_data": 21,
+        "type": "legacy"
+      }
+    ],
+    "minecraft:potion": [
+      {
+        "bedrock_identifier": "icetea:item/apple_icetea",
+        "bedrock_options": {
+          "icon": "icetea.item_apple_icetea"
+        },
+        "custom_model_data": 520002,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "icetea:item/carrot_icetea",
+        "bedrock_options": {
+          "icon": "icetea.item_carrot_icetea"
+        },
+        "custom_model_data": 520003,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "icetea:item/ice_water",
+        "bedrock_options": {
+          "icon": "icetea.item_ice_water"
+        },
+        "custom_model_data": 520000,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "icetea:item/icetea",
+        "bedrock_options": {
+          "icon": "icetea.item_icetea"
+        },
+        "custom_model_data": 520005,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "icetea:item/melon_icetea",
+        "bedrock_options": {
+          "icon": "icetea.item_melon_icetea"
+        },
+        "custom_model_data": 520001,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "icetea:item/pumpkin_icetea",
+        "bedrock_options": {
+          "icon": "icetea.item_pumpkin_icetea"
+        },
+        "custom_model_data": 520004,
+        "type": "legacy"
+      }
+    ],
+    "minecraft:phantom_membrane": [
+      {
+        "bedrock_identifier": "qualityarmory:ammo/ammo40m",
+        "bedrock_options": {
+          "icon": "qualityarmory.ammo_ammo40m_icon"
+        },
+        "custom_model_data": 8,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:ammo/ammo50cal",
+        "bedrock_options": {
+          "icon": "qualityarmory.ammo_ammo50cal_icon"
+        },
+        "custom_model_data": 7,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:ammo/ammo556",
+        "bedrock_options": {
+          "icon": "qualityarmory.ammo_ammo556_icon"
+        },
+        "custom_model_data": 2,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:ammo/ammo762",
+        "bedrock_options": {
+          "icon": "qualityarmory.ammo_ammo762_icon"
+        },
+        "custom_model_data": 3,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:ammo/ammo9mm",
+        "bedrock_options": {
+          "icon": "qualityarmory.ammo_ammo9mm_icon"
+        },
+        "custom_model_data": 1,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:ammo/ammofusion",
+        "bedrock_options": {
+          "icon": "qualityarmory.ammo_ammofusion_icon"
+        },
+        "custom_model_data": 10,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:ammo/ammomininuke",
+        "bedrock_options": {
+          "icon": "qualityarmory.ammo_ammomininuke_icon"
+        },
+        "custom_model_data": 9,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:ammo/ammomusketball",
+        "bedrock_options": {
+          "icon": "qualityarmory.ammo_ammomusketball_icon"
+        },
+        "custom_model_data": 6,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:ammo/ammorpg",
+        "bedrock_options": {
+          "icon": "qualityarmory.ammo_ammorpg_icon"
+        },
+        "custom_model_data": 5,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:ammo/ammoshotgun",
+        "bedrock_options": {
+          "icon": "qualityarmory.ammo_ammoshotgun_icon"
+        },
+        "custom_model_data": 4,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:armor/assaultmask",
+        "bedrock_options": {
+          "icon": "qualityarmory.armor_assaultmask_icon"
+        },
+        "custom_model_data": 18,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:armor/ncrmask",
+        "bedrock_options": {
+          "icon": "qualityarmory.armor_ncrmask_icon"
+        },
+        "custom_model_data": 19,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:armor/skimask",
+        "bedrock_options": {
+          "icon": "qualityarmory.armor_skimask_icon"
+        },
+        "custom_model_data": 20,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:armor/ushankahat",
+        "bedrock_options": {
+          "icon": "qualityarmory.armor_ushankahat_icon"
+        },
+        "custom_model_data": 21,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:backpack/backpackblack",
+        "bedrock_options": {
+          "icon": "qualityarmory.backpack_backpackblack_icon"
+        },
+        "custom_model_data": 14,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:backpack/backpackblue",
+        "bedrock_options": {
+          "icon": "qualityarmory.backpack_backpackblue_icon"
+        },
+        "custom_model_data": 15,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:backpack/backpackgreen",
+        "bedrock_options": {
+          "icon": "qualityarmory.backpack_backpackgreen_icon"
+        },
+        "custom_model_data": 11,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:backpack/backpackorange",
+        "bedrock_options": {
+          "icon": "qualityarmory.backpack_backpackorange_icon"
+        },
+        "custom_model_data": 16,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:backpack/backpackparachute",
+        "bedrock_options": {
+          "icon": "qualityarmory.backpack_backpackparachute_icon"
+        },
+        "custom_model_data": 12,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:backpack/backpackpink",
+        "bedrock_options": {
+          "icon": "qualityarmory.backpack_backpackpink_icon"
+        },
+        "custom_model_data": 17,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:backpack/parachutewhite",
+        "bedrock_options": {
+          "icon": "qualityarmory.backpack_parachutewhite_icon"
+        },
+        "custom_model_data": 13,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:misc/medkit",
+        "bedrock_options": {
+          "icon": "qualityarmory.misc_medkit_icon"
+        },
+        "custom_model_data": 22,
+        "type": "legacy"
+      }
+    ],
+    "minecraft:quartz": [
+      {
+        "bedrock_identifier": "qualityarmory:hat/astronauthelmet",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_astronauthelmet_icon"
+        },
+        "custom_model_data": 23,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/blackcap",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_blackcap_icon"
+        },
+        "custom_model_data": 8,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/bluecap",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_bluecap_icon"
+        },
+        "custom_model_data": 9,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/chicken",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_chicken_icon"
+        },
+        "custom_model_data": 25,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/crown",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_crown_icon"
+        },
+        "custom_model_data": 5,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/farmhat",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_farmhat_icon"
+        },
+        "custom_model_data": 4,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/firemanhat",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_firemanhat_icon"
+        },
+        "custom_model_data": 19,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/headcrab",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_headcrab_icon"
+        },
+        "custom_model_data": 7,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/headphones",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_headphones_icon"
+        },
+        "custom_model_data": 17,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/nursecap",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_nursecap_icon"
+        },
+        "custom_model_data": 13,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/pandaears",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_pandaears_icon"
+        },
+        "custom_model_data": 3,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/pig",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_pig_icon"
+        },
+        "custom_model_data": 26,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/pimphat",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_pimphat_icon"
+        },
+        "custom_model_data": 22,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/pinktophat",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_pinktophat_icon"
+        },
+        "custom_model_data": 14,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/policehat",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_policehat_icon"
+        },
+        "custom_model_data": 20,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/purpleheadphones",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_purpleheadphones_icon"
+        },
+        "custom_model_data": 18,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/redcap",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_redcap_icon"
+        },
+        "custom_model_data": 10,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/sgthat",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_sgthat_icon"
+        },
+        "custom_model_data": 11,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/squid",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_squid_icon"
+        },
+        "custom_model_data": 6,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/steampunk",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_steampunk_icon"
+        },
+        "custom_model_data": 21,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/tophat",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_tophat_icon"
+        },
+        "custom_model_data": 1,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/whitecap",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_whitecap_icon"
+        },
+        "custom_model_data": 16,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/whitetophat",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_whitetophat_icon"
+        },
+        "custom_model_data": 15,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/witchhat",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_witchhat_icon"
+        },
+        "custom_model_data": 2,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/wolfhead",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_wolfhead_icon"
+        },
+        "custom_model_data": 24,
+        "type": "legacy"
+      },
+      {
+        "bedrock_identifier": "qualityarmory:hat/yellowcap",
+        "bedrock_options": {
+          "icon": "qualityarmory.hat_yellowcap_icon"
+        },
+        "custom_model_data": 12,
+        "type": "legacy"
+      }
+    ]
+  }
+}

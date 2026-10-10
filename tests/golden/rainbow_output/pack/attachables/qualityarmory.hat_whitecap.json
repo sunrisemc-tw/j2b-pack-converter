@@ -1,0 +1,40 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "qualityarmory:hat/whitecap",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/all/rgbsheet1",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.qualityarmory.hat_whitecap"
+      },
+      "animations": {
+        "third_person": "animation.qualityarmory.hat_whitecap.hold_third_person",
+        "first_person": "animation.qualityarmory.hat_whitecap.hold_first_person",
+        "head": "animation.qualityarmory.hat_whitecap.head"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person": "context.is_first_person == 1.0 && (context.item_slot == 'main_hand' || context.item_slot == 'off_hand')"
+          },
+          {
+            "third_person": "context.is_first_person == 0.0 && (context.item_slot == 'main_hand' || context.item_slot == 'off_hand')"
+          },
+          {
+            "head": "context.is_first_person == 0.0 && context.item_slot == 'head'"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+    "model": {
+        "type": "range_dispatch",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "model",
+            "model": "minecraft:item/potion"
+        },
+        "entries": [
+            {
+                "threshold": 520000,
+                "model": {
+                    "type": "model",
+                    "model": "icetea:item/ice_water"
+                }
+            },
+            {
+                "threshold": 520001,
+                "model": {
+                    "type": "model",
+                    "model": "icetea:item/melon_icetea"
+                }
+            },
+            {
+                "threshold": 520002,
+                "model": {
+                    "type": "model",
+                    "model": "icetea:item/apple_icetea"
+                }
+            },
+            {
+                "threshold": 520003,
+                "model": {
+                    "type": "model",
+                    "model": "icetea:item/carrot_icetea"
+                }
+            },
+            {
+                "threshold": 520004,
+                "model": {
+                    "type": "model",
+                    "model": "icetea:item/pumpkin_icetea"
+                }
+            },
+            {
+                "threshold": 520005,
+                "model": {
+                    "type": "model",
+                    "model": "icetea:item/icetea"
+                }
+            }
+        ]
+    }
+}

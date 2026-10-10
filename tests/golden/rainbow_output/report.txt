@@ -1,0 +1,173 @@
+#### READ THIS FIRST ####
+What do I do now?
+
+In this folder, you'll find 4 important files/folders along with this one:
+
+- custom-skulls.yml: put this in Geyser's config folder. These are the exported player skulls. The file may already exist in Geyser's config folder, be careful with overwriting it!
+- custom_mappings: you need to put the files in here in the `custom_mappings` folder in Geyser's config folder. These are the generated Geyser mappings.
+- pack.zip: put this in the "packs" folder in Geyser's config folder. This is the generated bedrock resourcepack.
+- lang: put all files in this folder in the "locales/overrides" folder in Geyser's config folder. These are the exported custom translation strings.
+  - The folder can be empty or non-existent if no language files are found. This is usually not an issue!
+
+Once you have taken those steps, restart your server. If everything went right, bedrock players should download
+the generated pack and see your custom items.
+
+IF YOU EXPERIENCE ANY ISSUES, please go to our Discord (https://discord.gg/geysermc) for support.
+Use the #custom-resource-packs channel, and make sure to include this report file.
+
+You can also open an issue report over at our issue tracker (https://github.com/GeyserMC/Rainbow/issues).
+Again, be sure to include this report file, and please make sure your issue is not already reported!
+If it is, you can help out by adding details to the existing report.
+
+Below, you'll find some statistics about the generated pack, and a mapping report,
+which will list any models converted, and any problems that occurred during mapping.
+#########################
+
+-- PACK GENERATION REPORT --
+// Flint and Steel!
+
+Version of Rainbow: 0.2.0-26.1-b53
+
+Generated pack: sunrisepack
+Block mappings written: 0
+Item mappings written: 118
+
+Item texture atlas size: 118
+Terrain texture atlas size: 0
+Flipbook texture definitions: 0
+Sound definitions: 0
+
+Item attachables exported: 112
+
+JSON-files written: 343
+Textures written: 138
+
+Username skulls exported: 0
+UUID skulls exported: 0
+Static texture skulls exported: 0
+
+-- ASSET CACHE STATS --
+Geometry cache: 112 written, 0 cache hits 
+Block texture cache: 0 written, 0 cache hits 
+Item texture cache: 26 written, 92 cache hits 
+
+-- PACK TREE REPORT --
+Bedrock pack sunrisepack:
+  item model minecraft:crossbow with custom model data 1 plain model qualityarmory:gun/p30: creating mapping for block model qualityarmory:gun/p30
+  item model minecraft:crossbow with custom model data 2 plain model qualityarmory:gun/pkp: creating mapping for block model qualityarmory:gun/pkp
+  item model minecraft:potion with custom model data 520000 plain model icetea:item/ice_water: creating mapping for block model icetea:item/ice_water
+  item model minecraft:potion with custom model data 520001 plain model icetea:item/melon_icetea: creating mapping for block model icetea:item/melon_icetea
+  item model minecraft:potion with custom model data 520002 plain model icetea:item/apple_icetea: creating mapping for block model icetea:item/apple_icetea
+  item model minecraft:potion with custom model data 520003 plain model icetea:item/carrot_icetea: creating mapping for block model icetea:item/carrot_icetea
+  item model minecraft:potion with custom model data 520004 plain model icetea:item/pumpkin_icetea: creating mapping for block model icetea:item/pumpkin_icetea
+  item model minecraft:potion with custom model data 520005 plain model icetea:item/icetea: creating mapping for block model icetea:item/icetea
+  item model minecraft:phantom_membrane with custom model data 1 plain model qualityarmory:ammo/ammo9mm: creating mapping for block model qualityarmory:ammo/ammo9mm
+  item model minecraft:phantom_membrane with custom model data 2 plain model qualityarmory:ammo/ammo556: creating mapping for block model qualityarmory:ammo/ammo556
+  item model minecraft:phantom_membrane with custom model data 3 plain model qualityarmory:ammo/ammo762: creating mapping for block model qualityarmory:ammo/ammo762
+  item model minecraft:phantom_membrane with custom model data 4 plain model qualityarmory:ammo/ammoshotgun: creating mapping for block model qualityarmory:ammo/ammoshotgun
+  item model minecraft:phantom_membrane with custom model data 5 plain model qualityarmory:ammo/ammorpg: creating mapping for block model qualityarmory:ammo/ammorpg
+  item model minecraft:phantom_membrane with custom model data 6 plain model qualityarmory:ammo/ammomusketball: creating mapping for block model qualityarmory:ammo/ammomusketball
+  item model minecraft:phantom_membrane with custom model data 7 plain model qualityarmory:ammo/ammo50cal: creating mapping for block model qualityarmory:ammo/ammo50cal
+  item model minecraft:phantom_membrane with custom model data 8 plain model qualityarmory:ammo/ammo40m: creating mapping for block model qualityarmory:ammo/ammo40m
+  item model minecraft:phantom_membrane with custom model data 9 plain model qualityarmory:ammo/ammomininuke: creating mapping for block model qualityarmory:ammo/ammomininuke
+  item model minecraft:phantom_membrane with custom model data 10 plain model qualityarmory:ammo/ammofusion: creating mapping for block model qualityarmory:ammo/ammofusion
+  item model minecraft:phantom_membrane with custom model data 11 plain model qualityarmory:backpack/backpackgreen: creating mapping for block model qualityarmory:backpack/backpackgreen
+  item model minecraft:phantom_membrane with custom model data 12 plain model qualityarmory:backpack/backpackparachute: creating mapping for block model qualityarmory:backpack/backpackparachute
+  item model minecraft:phantom_membrane with custom model data 13 plain model qualityarmory:backpack/parachutewhite: creating mapping for block model qualityarmory:backpack/parachutewhite
+  item model minecraft:phantom_membrane with custom model data 14 plain model qualityarmory:backpack/backpackblack: creating mapping for block model qualityarmory:backpack/backpackblack
+  item model minecraft:phantom_membrane with custom model data 15 plain model qualityarmory:backpack/backpackblue: creating mapping for block model qualityarmory:backpack/backpackblue
+  item model minecraft:phantom_membrane with custom model data 16 plain model qualityarmory:backpack/backpackorange: creating mapping for block model qualityarmory:backpack/backpackorange
+  item model minecraft:phantom_membrane with custom model data 17 plain model qualityarmory:backpack/backpackpink: creating mapping for block model qualityarmory:backpack/backpackpink
+  item model minecraft:phantom_membrane with custom model data 18 plain model qualityarmory:armor/assaultmask: creating mapping for block model qualityarmory:armor/assaultmask
+  item model minecraft:phantom_membrane with custom model data 19 plain model qualityarmory:armor/ncrmask: creating mapping for block model qualityarmory:armor/ncrmask
+  item model minecraft:phantom_membrane with custom model data 20 plain model qualityarmory:armor/skimask: creating mapping for block model qualityarmory:armor/skimask
+  item model minecraft:phantom_membrane with custom model data 21 plain model qualityarmory:armor/ushankahat: creating mapping for block model qualityarmory:armor/ushankahat
+  item model minecraft:phantom_membrane with custom model data 22 plain model qualityarmory:misc/medkit: creating mapping for block model qualityarmory:misc/medkit
+  item model minecraft:quartz with custom model data 1 plain model qualityarmory:hat/tophat: creating mapping for block model qualityarmory:hat/tophat
+  item model minecraft:quartz with custom model data 2 plain model qualityarmory:hat/witchhat: creating mapping for block model qualityarmory:hat/witchhat
+  item model minecraft:quartz with custom model data 3 plain model qualityarmory:hat/pandaears: creating mapping for block model qualityarmory:hat/pandaears
+  item model minecraft:quartz with custom model data 4 plain model qualityarmory:hat/farmhat: creating mapping for block model qualityarmory:hat/farmhat
+  item model minecraft:quartz with custom model data 5 plain model qualityarmory:hat/crown: creating mapping for block model qualityarmory:hat/crown
+  item model minecraft:quartz with custom model data 6 plain model qualityarmory:hat/squid: creating mapping for block model qualityarmory:hat/squid
+  item model minecraft:quartz with custom model data 7 plain model qualityarmory:hat/headcrab: creating mapping for block model qualityarmory:hat/headcrab
+  item model minecraft:quartz with custom model data 8 plain model qualityarmory:hat/blackcap: creating mapping for block model qualityarmory:hat/blackcap
+  item model minecraft:quartz with custom model data 9 plain model qualityarmory:hat/bluecap: creating mapping for block model qualityarmory:hat/bluecap
+  item model minecraft:quartz with custom model data 10 plain model qualityarmory:hat/redcap: creating mapping for block model qualityarmory:hat/redcap
+  item model minecraft:quartz with custom model data 11 plain model qualityarmory:hat/sgthat: creating mapping for block model qualityarmory:hat/sgthat
+  item model minecraft:quartz with custom model data 12 plain model qualityarmory:hat/yellowcap: creating mapping for block model qualityarmory:hat/yellowcap
+  item model minecraft:quartz with custom model data 13 plain model qualityarmory:hat/nursecap: creating mapping for block model qualityarmory:hat/nursecap
+  item model minecraft:quartz with custom model data 14 plain model qualityarmory:hat/pinktophat: creating mapping for block model qualityarmory:hat/pinktophat
+  item model minecraft:quartz with custom model data 15 plain model qualityarmory:hat/whitetophat: creating mapping for block model qualityarmory:hat/whitetophat
+  item model minecraft:quartz with custom model data 16 plain model qualityarmory:hat/whitecap: creating mapping for block model qualityarmory:hat/whitecap
+  item model minecraft:quartz with custom model data 17 plain model qualityarmory:hat/headphones: creating mapping for block model qualityarmory:hat/headphones
+  item model minecraft:quartz with custom model data 18 plain model qualityarmory:hat/purpleheadphones: creating mapping for block model qualityarmory:hat/purpleheadphones
+  item model minecraft:quartz with custom model data 19 plain model qualityarmory:hat/firemanhat: creating mapping for block model qualityarmory:hat/firemanhat
+  item model minecraft:quartz with custom model data 20 plain model qualityarmory:hat/policehat: creating mapping for block model qualityarmory:hat/policehat
+  item model minecraft:quartz with custom model data 21 plain model qualityarmory:hat/steampunk: creating mapping for block model qualityarmory:hat/steampunk
+  item model minecraft:quartz with custom model data 22 plain model qualityarmory:hat/pimphat: creating mapping for block model qualityarmory:hat/pimphat
+  item model minecraft:quartz with custom model data 23 plain model qualityarmory:hat/astronauthelmet: creating mapping for block model qualityarmory:hat/astronauthelmet
+  item model minecraft:quartz with custom model data 24 plain model qualityarmory:hat/wolfhead: creating mapping for block model qualityarmory:hat/wolfhead
+  item model minecraft:quartz with custom model data 25 plain model qualityarmory:hat/chicken: creating mapping for block model qualityarmory:hat/chicken
+  item model minecraft:quartz with custom model data 26 plain model qualityarmory:hat/pig: creating mapping for block model qualityarmory:hat/pig
+  item model minecraft:crossbow with custom model data 3 plain model qualityarmory:gun/mp5: creating mapping for block model qualityarmory:gun/mp5
+  item model minecraft:crossbow with custom model data 4 plain model qualityarmory:gun/ak47: creating mapping for block model qualityarmory:gun/ak47
+  item model minecraft:crossbow with custom model data 5 plain model qualityarmory:gun/ak47u: creating mapping for block model qualityarmory:gun/ak47u
+  item model minecraft:crossbow with custom model data 6 plain model qualityarmory:gun/m16: creating mapping for block model qualityarmory:gun/m16
+  item model minecraft:crossbow with custom model data 7 plain model qualityarmory:gun/remmington: creating mapping for block model qualityarmory:gun/remmington
+  item model minecraft:crossbow with custom model data 8 plain model qualityarmory:gun/fnfal: creating mapping for block model qualityarmory:gun/fnfal
+  item model minecraft:crossbow with custom model data 9 plain model qualityarmory:gun/rpg: creating mapping for block model qualityarmory:gun/rpg
+  item model minecraft:crossbow with custom model data 10 plain model qualityarmory:gun/ump: creating mapping for block model qualityarmory:gun/ump
+  item model minecraft:crossbow with custom model data 11 plain model qualityarmory:gun/sw1911: creating mapping for block model qualityarmory:gun/sw1911
+  item model minecraft:crossbow with custom model data 12 plain model qualityarmory:gun/m40: creating mapping for block model qualityarmory:gun/m40
+  item model minecraft:crossbow with custom model data 13 plain model qualityarmory:gun/enfield: creating mapping for block model qualityarmory:gun/enfield
+  item model minecraft:crossbow with custom model data 14 plain model qualityarmory:gun/mauser: creating mapping for block model qualityarmory:gun/mauser
+  item model minecraft:crossbow with custom model data 15 plain model qualityarmory:misc/grenade: creating mapping for block model qualityarmory:misc/grenade
+  item model minecraft:crossbow with custom model data 16 plain model qualityarmory:gun/dragunov: creating mapping for block model qualityarmory:gun/dragunov
+  item model minecraft:crossbow with custom model data 17 plain model qualityarmory:gun/spas: creating mapping for block model qualityarmory:gun/spas
+  item model minecraft:crossbow with custom model data 18 plain model qualityarmory:gun/aa12: creating mapping for block model qualityarmory:gun/aa12
+  item model minecraft:crossbow with custom model data 19 plain model qualityarmory:gun/magnum: creating mapping for block model qualityarmory:gun/magnum
+  item model minecraft:crossbow with custom model data 20 plain model qualityarmory:gun/awp: creating mapping for block model qualityarmory:gun/awp
+  item model minecraft:crossbow with custom model data 21 plain model qualityarmory:misc/smokegrenade: creating mapping for block model qualityarmory:misc/smokegrenade
+  item model minecraft:crossbow with custom model data 22 plain model qualityarmory:misc/flashbang: creating mapping for block model qualityarmory:misc/flashbang
+  item model minecraft:crossbow with custom model data 23 plain model qualityarmory:gun/p30sil: creating mapping for block model qualityarmory:gun/p30sil
+  item model minecraft:crossbow with custom model data 24 plain model qualityarmory:gun/awp2: creating mapping for block model qualityarmory:gun/awp2
+  item model minecraft:crossbow with custom model data 25 plain model qualityarmory:gun/m4a1s: creating mapping for block model qualityarmory:gun/m4a1s
+  item model minecraft:crossbow with custom model data 26 plain model qualityarmory:gun/rpk: creating mapping for block model qualityarmory:gun/rpk
+  item model minecraft:crossbow with custom model data 27 plain model qualityarmory:gun/sg553: creating mapping for block model qualityarmory:gun/sg553
+  item model minecraft:crossbow with custom model data 28 plain model qualityarmory:gun/dp27: creating mapping for block model qualityarmory:gun/dp27
+  item model minecraft:crossbow with custom model data 29 plain model qualityarmory:misc/incendarygrenade: creating mapping for block model qualityarmory:misc/incendarygrenade
+  item model minecraft:crossbow with custom model data 30 plain model qualityarmory:gun/homingrpg: creating mapping for block model qualityarmory:gun/homingrpg
+  item model minecraft:crossbow with custom model data 31 plain model qualityarmory:gun/musketpistol: creating mapping for block model qualityarmory:gun/musketpistol
+  item model minecraft:crossbow with custom model data 32 plain model qualityarmory:gun/lazerrifle: creating mapping for block model qualityarmory:gun/lazerrifle
+  item model minecraft:crossbow with custom model data 33 plain model qualityarmory:gun/fatman: creating mapping for block model qualityarmory:gun/fatman
+  item model minecraft:crossbow with custom model data 34 plain model qualityarmory:gun/fo10mm: creating mapping for block model qualityarmory:gun/fo10mm
+  item model minecraft:crossbow with custom model data 35 plain model qualityarmory:gun/instituterifle: creating mapping for block model qualityarmory:gun/instituterifle
+  item model minecraft:crossbow with custom model data 36 plain model qualityarmory:gun/musketrifle: creating mapping for block model qualityarmory:gun/musketrifle
+  item model minecraft:crossbow with custom model data 37 plain model qualityarmory:gun/aliens: creating mapping for block model qualityarmory:gun/aliens
+  item model minecraft:crossbow with custom model data 38 plain model qualityarmory:gun/auto9: creating mapping for block model qualityarmory:gun/auto9
+  item model minecraft:crossbow with custom model data 39 plain model qualityarmory:gun/arcgun: creating mapping for block model qualityarmory:gun/arcgun
+  item model minecraft:crossbow with custom model data 40 plain model qualityarmory:gun/halo: creating mapping for block model qualityarmory:gun/halo
+  item model minecraft:crossbow with custom model data 41 plain model qualityarmory:gun/needler: creating mapping for block model qualityarmory:gun/needler
+  item model minecraft:crossbow with custom model data 42 plain model qualityarmory:gun/thatgun: creating mapping for block model qualityarmory:gun/thatgun
+  item model minecraft:crossbow with custom model data 43 plain model qualityarmory:gun/swblaster: creating mapping for block model qualityarmory:gun/swblaster
+  item model minecraft:crossbow with custom model data 44 plain model qualityarmory:gun/overwatchpulsegun: creating mapping for block model qualityarmory:gun/overwatchpulsegun
+  item model minecraft:crossbow with custom model data 45 plain model qualityarmory:gun/vera: creating mapping for block model qualityarmory:gun/vera
+  item model minecraft:crossbow with custom model data 46 plain model qualityarmory:melee/lightsaberblue: creating mapping for block model qualityarmory:melee/lightsaberblue
+  item model minecraft:crossbow with custom model data 47 plain model qualityarmory:melee/lightsaberred: creating mapping for block model qualityarmory:melee/lightsaberred
+  item model minecraft:crossbow with custom model data 48 plain model qualityarmory:gun/mac10: creating mapping for block model qualityarmory:gun/mac10
+  item model minecraft:crossbow with custom model data 49 plain model qualityarmory:gun/uzi: creating mapping for block model qualityarmory:gun/uzi
+  item model minecraft:crossbow with custom model data 50 plain model qualityarmory:gun/skorpion: creating mapping for block model qualityarmory:gun/skorpion
+  item model minecraft:crossbow with custom model data 51 plain model qualityarmory:gun/sks: creating mapping for block model qualityarmory:gun/sks
+  item model minecraft:crossbow with custom model data 52 plain model qualityarmory:gun/barrett: creating mapping for block model qualityarmory:gun/barrett
+  item model minecraft:crossbow with custom model data 53 plain model qualityarmory:gun/makarov: creating mapping for block model qualityarmory:gun/makarov
+  item model minecraft:crossbow with custom model data 54 plain model qualityarmory:gun/ppsh41: creating mapping for block model qualityarmory:gun/ppsh41
+  item model minecraft:crossbow with custom model data 55 plain model qualityarmory:gun/m79: creating mapping for block model qualityarmory:gun/m79
+  item model minecraft:crossbow with custom model data 56 plain model qualityarmory:gun/minigun: creating mapping for block model qualityarmory:gun/minigun
+  item model minecraft:crossbow with custom model data 57 plain model qualityarmory:gun/mark19: creating mapping for block model qualityarmory:gun/mark19
+  item model minecraft:crossbow with custom model data 58 plain model qualityarmory:gun/asval: creating mapping for block model qualityarmory:gun/asval
+  item model minecraft:crossbow with custom model data 59 plain model qualityarmory:gun/fnp90: creating mapping for block model qualityarmory:gun/fnp90
+  item model minecraft:crossbow with custom model data 60 plain model qualityarmory:gun/kar98k: creating mapping for block model qualityarmory:gun/kar98k
+  item model minecraft:crossbow with custom model data 61 plain model qualityarmory:gun/mp40: creating mapping for block model qualityarmory:gun/mp40
+  item model minecraft:crossbow with custom model data 62 plain model qualityarmory:gun/stg44: creating mapping for block model qualityarmory:gun/stg44
+  item model minecraft:crossbow with custom model data 63 plain model qualityarmory:gun/sawshotgun: creating mapping for block model qualityarmory:gun/sawshotgun
+  item model minecraft:crossbow with custom model data 64 plain model qualityarmory:gun/famas: creating mapping for block model qualityarmory:gun/famas

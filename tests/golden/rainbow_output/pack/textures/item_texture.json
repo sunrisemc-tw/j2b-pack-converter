@@ -1,0 +1,360 @@
+{
+  "resource_pack_name": "sunrisepack",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "qualityarmory.gun_awp2_icon": {
+      "textures": "textures/gun/awp2_icon"
+    },
+    "qualityarmory.gun_aliens_icon": {
+      "textures": "textures/gun/aliens_icon"
+    },
+    "qualityarmory.gun_ppsh41_icon": {
+      "textures": "textures/gun/ppsh41_icon"
+    },
+    "qualityarmory.gun_ak47u_icon": {
+      "textures": "textures/gun/ak47u_icon"
+    },
+    "qualityarmory.ammo_ammoshotgun_icon": {
+      "textures": "textures/ammo/ammoshotgun_icon"
+    },
+    "qualityarmory.hat_redcap_icon": {
+      "textures": "textures/hat/redcap_icon"
+    },
+    "qualityarmory.gun_pkp_icon": {
+      "textures": "textures/gun/pkp_icon"
+    },
+    "qualityarmory.gun_famas_icon": {
+      "textures": "textures/gun/famas_icon"
+    },
+    "qualityarmory.backpack_backpackparachute_icon": {
+      "textures": "textures/backpack/backpackparachute_icon"
+    },
+    "qualityarmory.hat_pimphat_icon": {
+      "textures": "textures/hat/pimphat_icon"
+    },
+    "qualityarmory.ammo_ammo556_icon": {
+      "textures": "textures/ammo/ammo556_icon"
+    },
+    "qualityarmory.gun_dragunov_icon": {
+      "textures": "textures/gun/dragunov_icon"
+    },
+    "qualityarmory.backpack_backpackpink_icon": {
+      "textures": "textures/backpack/backpackpink_icon"
+    },
+    "qualityarmory.hat_pig_icon": {
+      "textures": "textures/hat/pig_icon"
+    },
+    "qualityarmory.gun_enfield_icon": {
+      "textures": "textures/gun/enfield_icon"
+    },
+    "qualityarmory.ammo_ammomusketball_icon": {
+      "textures": "textures/ammo/ammomusketball_icon"
+    },
+    "qualityarmory.hat_yellowcap_icon": {
+      "textures": "textures/hat/yellowcap_icon"
+    },
+    "qualityarmory.hat_bluecap_icon": {
+      "textures": "textures/hat/bluecap_icon"
+    },
+    "qualityarmory.hat_purpleheadphones_icon": {
+      "textures": "textures/hat/purpleheadphones_icon"
+    },
+    "icetea.item_carrot_icetea": {
+      "textures": "textures/item/carrot_icetea"
+    },
+    "qualityarmory.gun_homingrpg_icon": {
+      "textures": "textures/gun/homingrpg_icon"
+    },
+    "qualityarmory.gun_auto9_icon": {
+      "textures": "textures/gun/auto9_icon"
+    },
+    "qualityarmory.ammo_ammo762_icon": {
+      "textures": "textures/ammo/ammo762_icon"
+    },
+    "qualityarmory.hat_farmhat_icon": {
+      "textures": "textures/hat/farmhat_icon"
+    },
+    "qualityarmory.gun_mp40_icon": {
+      "textures": "textures/gun/mp40_icon"
+    },
+    "qualityarmory.gun_needler_icon": {
+      "textures": "textures/gun/needler_icon"
+    },
+    "qualityarmory.gun_arcgun_icon": {
+      "textures": "textures/gun/arcgun_icon"
+    },
+    "qualityarmory.gun_musketpistol_icon": {
+      "textures": "textures/gun/musketpistol_icon"
+    },
+    "qualityarmory.gun_thatgun_icon": {
+      "textures": "textures/gun/thatgun_icon"
+    },
+    "qualityarmory.melee_lightsaberblue_icon": {
+      "textures": "textures/melee/lightsaberblue_icon"
+    },
+    "qualityarmory.backpack_backpackgreen_icon": {
+      "textures": "textures/backpack/backpackgreen_icon"
+    },
+    "qualityarmory.gun_fo10mm_icon": {
+      "textures": "textures/gun/fo10mm_icon"
+    },
+    "qualityarmory.hat_headphones_icon": {
+      "textures": "textures/hat/headphones_icon"
+    },
+    "qualityarmory.gun_p30sil_icon": {
+      "textures": "textures/gun/p30sil_icon"
+    },
+    "qualityarmory.gun_p30_icon": {
+      "textures": "textures/gun/p30_icon"
+    },
+    "qualityarmory.misc_smokegrenade_icon": {
+      "textures": "textures/misc/smokegrenade_icon"
+    },
+    "qualityarmory.gun_halo_icon": {
+      "textures": "textures/gun/halo_icon"
+    },
+    "qualityarmory.ammo_ammo40m_icon": {
+      "textures": "textures/ammo/ammo40m_icon"
+    },
+    "icetea.item_ice_water": {
+      "textures": "textures/item/ice_water"
+    },
+    "qualityarmory.misc_incendarygrenade_icon": {
+      "textures": "textures/misc/incendarygrenade_icon"
+    },
+    "qualityarmory.ammo_ammomininuke_icon": {
+      "textures": "textures/ammo/ammomininuke_icon"
+    },
+    "qualityarmory.gun_minigun_icon": {
+      "textures": "textures/gun/minigun_icon"
+    },
+    "qualityarmory.misc_grenade_icon": {
+      "textures": "textures/misc/grenade_icon"
+    },
+    "qualityarmory.armor_ncrmask_icon": {
+      "textures": "textures/armor/ncrmask_icon"
+    },
+    "qualityarmory.armor_skimask_icon": {
+      "textures": "textures/armor/skimask_icon"
+    },
+    "qualityarmory.gun_kar98k_icon": {
+      "textures": "textures/gun/kar98k_icon"
+    },
+    "qualityarmory.gun_fatman_icon": {
+      "textures": "textures/gun/fatman_icon"
+    },
+    "qualityarmory.backpack_backpackblack_icon": {
+      "textures": "textures/backpack/backpackblack_icon"
+    },
+    "qualityarmory.hat_chicken_icon": {
+      "textures": "textures/hat/chicken_icon"
+    },
+    "qualityarmory.gun_magnum_icon": {
+      "textures": "textures/gun/magnum_icon"
+    },
+    "qualityarmory.misc_flashbang_icon": {
+      "textures": "textures/misc/flashbang_icon"
+    },
+    "qualityarmory.gun_m40_icon": {
+      "textures": "textures/gun/m40_icon"
+    },
+    "qualityarmory.gun_awp_icon": {
+      "textures": "textures/gun/awp_icon"
+    },
+    "icetea.item_apple_icetea": {
+      "textures": "textures/item/apple_icetea"
+    },
+    "qualityarmory.hat_astronauthelmet_icon": {
+      "textures": "textures/hat/astronauthelmet_icon"
+    },
+    "qualityarmory.backpack_parachutewhite_icon": {
+      "textures": "textures/backpack/parachutewhite_icon"
+    },
+    "icetea.item_melon_icetea": {
+      "textures": "textures/item/melon_icetea"
+    },
+    "qualityarmory.ammo_ammofusion_icon": {
+      "textures": "textures/ammo/ammofusion_icon"
+    },
+    "qualityarmory.gun_sw1911_icon": {
+      "textures": "textures/gun/sw1911_icon"
+    },
+    "qualityarmory.ammo_ammo9mm_icon": {
+      "textures": "textures/ammo/ammo9mm_icon"
+    },
+    "qualityarmory.gun_stg44_icon": {
+      "textures": "textures/gun/stg44_icon"
+    },
+    "qualityarmory.gun_ak47_icon": {
+      "textures": "textures/gun/ak47_icon"
+    },
+    "qualityarmory.hat_crown_icon": {
+      "textures": "textures/hat/crown_icon"
+    },
+    "qualityarmory.gun_swblaster_icon": {
+      "textures": "textures/gun/swblaster_icon"
+    },
+    "qualityarmory.armor_assaultmask_icon": {
+      "textures": "textures/armor/assaultmask_icon"
+    },
+    "qualityarmory.hat_sgthat_icon": {
+      "textures": "textures/hat/sgthat_icon"
+    },
+    "qualityarmory.gun_rpk_icon": {
+      "textures": "textures/gun/rpk_icon"
+    },
+    "qualityarmory.gun_mark19_icon": {
+      "textures": "textures/gun/mark19_icon"
+    },
+    "qualityarmory.gun_uzi_icon": {
+      "textures": "textures/gun/uzi_icon"
+    },
+    "qualityarmory.hat_tophat_icon": {
+      "textures": "textures/hat/tophat_icon"
+    },
+    "qualityarmory.armor_ushankahat_icon": {
+      "textures": "textures/armor/ushankahat_icon"
+    },
+    "qualityarmory.gun_aa12_icon": {
+      "textures": "textures/gun/aa12_icon"
+    },
+    "qualityarmory.hat_blackcap_icon": {
+      "textures": "textures/hat/blackcap_icon"
+    },
+    "qualityarmory.gun_instituterifle_icon": {
+      "textures": "textures/gun/instituterifle_icon"
+    },
+    "qualityarmory.gun_lazerrifle_icon": {
+      "textures": "textures/gun/lazerrifle_icon"
+    },
+    "qualityarmory.hat_steampunk_icon": {
+      "textures": "textures/hat/steampunk_icon"
+    },
+    "qualityarmory.gun_ump_icon": {
+      "textures": "textures/gun/ump_icon"
+    },
+    "qualityarmory.gun_fnp90_icon": {
+      "textures": "textures/gun/fnp90_icon"
+    },
+    "qualityarmory.backpack_backpackorange_icon": {
+      "textures": "textures/backpack/backpackorange_icon"
+    },
+    "qualityarmory.gun_barrett_icon": {
+      "textures": "textures/gun/barrett_icon"
+    },
+    "qualityarmory.melee_lightsaberred_icon": {
+      "textures": "textures/melee/lightsaberred_icon"
+    },
+    "qualityarmory.gun_spas_icon": {
+      "textures": "textures/gun/spas_icon"
+    },
+    "qualityarmory.gun_asval_icon": {
+      "textures": "textures/gun/asval_icon"
+    },
+    "qualityarmory.hat_squid_icon": {
+      "textures": "textures/hat/squid_icon"
+    },
+    "qualityarmory.gun_remmington_icon": {
+      "textures": "textures/gun/remmington_icon"
+    },
+    "qualityarmory.gun_m79_icon": {
+      "textures": "textures/gun/m79_icon"
+    },
+    "qualityarmory.hat_witchhat_icon": {
+      "textures": "textures/hat/witchhat_icon"
+    },
+    "qualityarmory.gun_fnfal_icon": {
+      "textures": "textures/gun/fnfal_icon"
+    },
+    "qualityarmory.gun_dp27_icon": {
+      "textures": "textures/gun/dp27_icon"
+    },
+    "qualityarmory.ammo_ammorpg_icon": {
+      "textures": "textures/ammo/ammorpg_icon"
+    },
+    "qualityarmory.gun_musketrifle_icon": {
+      "textures": "textures/gun/musketrifle_icon"
+    },
+    "qualityarmory.hat_pinktophat_icon": {
+      "textures": "textures/hat/pinktophat_icon"
+    },
+    "qualityarmory.gun_sawshotgun_icon": {
+      "textures": "textures/gun/sawshotgun_icon"
+    },
+    "qualityarmory.gun_sks_icon": {
+      "textures": "textures/gun/sks_icon"
+    },
+    "qualityarmory.hat_pandaears_icon": {
+      "textures": "textures/hat/pandaears_icon"
+    },
+    "qualityarmory.ammo_ammo50cal_icon": {
+      "textures": "textures/ammo/ammo50cal_icon"
+    },
+    "qualityarmory.hat_nursecap_icon": {
+      "textures": "textures/hat/nursecap_icon"
+    },
+    "qualityarmory.hat_firemanhat_icon": {
+      "textures": "textures/hat/firemanhat_icon"
+    },
+    "qualityarmory.gun_rpg_icon": {
+      "textures": "textures/gun/rpg_icon"
+    },
+    "qualityarmory.gun_sg553_icon": {
+      "textures": "textures/gun/sg553_icon"
+    },
+    "qualityarmory.gun_m16_icon": {
+      "textures": "textures/gun/m16_icon"
+    },
+    "icetea.item_icetea": {
+      "textures": "textures/item/icetea"
+    },
+    "qualityarmory.misc_medkit_icon": {
+      "textures": "textures/misc/medkit_icon"
+    },
+    "qualityarmory.gun_m4a1s_icon": {
+      "textures": "textures/gun/m4a1s_icon"
+    },
+    "qualityarmory.gun_mp5_icon": {
+      "textures": "textures/gun/mp5_icon"
+    },
+    "qualityarmory.gun_mauser_icon": {
+      "textures": "textures/gun/mauser_icon"
+    },
+    "qualityarmory.hat_whitetophat_icon": {
+      "textures": "textures/hat/whitetophat_icon"
+    },
+    "icetea.item_pumpkin_icetea": {
+      "textures": "textures/item/pumpkin_icetea"
+    },
+    "qualityarmory.gun_makarov_icon": {
+      "textures": "textures/gun/makarov_icon"
+    },
+    "qualityarmory.gun_mac10_icon": {
+      "textures": "textures/gun/mac10_icon"
+    },
+    "qualityarmory.hat_policehat_icon": {
+      "textures": "textures/hat/policehat_icon"
+    },
+    "qualityarmory.hat_wolfhead_icon": {
+      "textures": "textures/hat/wolfhead_icon"
+    },
+    "qualityarmory.gun_overwatchpulsegun_icon": {
+      "textures": "textures/gun/overwatchpulsegun_icon"
+    },
+    "qualityarmory.hat_whitecap_icon": {
+      "textures": "textures/hat/whitecap_icon"
+    },
+    "qualityarmory.gun_vera_icon": {
+      "textures": "textures/gun/vera_icon"
+    },
+    "qualityarmory.hat_headcrab_icon": {
+      "textures": "textures/hat/headcrab_icon"
+    },
+    "qualityarmory.backpack_backpackblue_icon": {
+      "textures": "textures/backpack/backpackblue_icon"
+    },
+    "qualityarmory.gun_skorpion_icon": {
+      "textures": "textures/gun/skorpion_icon"
+    }
+  }
+}

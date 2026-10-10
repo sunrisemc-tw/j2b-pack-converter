@@ -1,0 +1,40 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "qualityarmory:gun/m16",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/gun/p30_stitched",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.qualityarmory.gun_m16"
+      },
+      "animations": {
+        "third_person": "animation.qualityarmory.gun_m16.hold_third_person",
+        "first_person": "animation.qualityarmory.gun_m16.hold_first_person",
+        "head": "animation.qualityarmory.gun_m16.head"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person": "context.is_first_person == 1.0 && (context.item_slot == 'main_hand' || context.item_slot == 'off_hand')"
+          },
+          {
+            "third_person": "context.is_first_person == 0.0 && (context.item_slot == 'main_hand' || context.item_slot == 'off_hand')"
+          },
+          {
+            "head": "context.is_first_person == 0.0 && context.item_slot == 'head'"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
+    }
+  }
+}

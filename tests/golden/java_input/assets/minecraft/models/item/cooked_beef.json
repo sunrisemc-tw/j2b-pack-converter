@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/cooked_beef"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 610000
+      },
+      "model": "minecraft:item/roast_duck/carbon"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 610001
+      },
+      "model": "minecraft:item/roast_duck/iron_plate"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 610002
+      },
+      "model": "minecraft:item/roast_duck/golden"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 610003
+      },
+      "model": "minecraft:item/roast_duck/diamond"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 610004
+      },
+      "model": "minecraft:item/roast_duck/jade"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 610005
+      },
+      "model": "minecraft:item/roast_duck/copper_plate"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 610006
+      },
+      "model": "minecraft:item/roast_duck/infernal"
+    }
+  ]
+}

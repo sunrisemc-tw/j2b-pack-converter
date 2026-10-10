@@ -1,0 +1,71 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.qualityarmory.gun_thatgun.hold_third_person": {
+      "loop": true,
+      "bones": {
+        "bone": {
+          "position": [
+            -0.0,
+            10.5,
+            -1.5
+          ],
+          "rotation": [
+            90.0,
+            3.0,
+            2.0
+          ],
+          "scale": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        }
+      }
+    },
+    "animation.qualityarmory.gun_thatgun.hold_first_person": {
+      "loop": true,
+      "bones": {
+        "bone": {
+          "position": [
+            -5.0,
+            12.5,
+            0.0
+          ],
+          "rotation": [
+            -92.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "animation.qualityarmory.gun_thatgun.head": {
+      "loop": true,
+      "bones": {
+        "bone": {
+          "position": [
+            0.0,
+            20.0,
+            0.0
+          ],
+          "rotation": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            0.655,
+            0.655,
+            0.655
+          ]
+        }
+      }
+    }
+  }
+}
