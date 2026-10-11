@@ -37,8 +37,11 @@ def _custom_namespace(namespace: str) -> str:
     return "sunrise" if namespace == "minecraft" else namespace
 
 
-def _bedrock_item_id(namespace: str, path: str) -> str:
-    return f"{_custom_namespace(namespace)}:{path}"
+def _bedrock_item_id(namespace: str, path: str, custom_model_data: int) -> str:
+    """非 minecraft namespace 保持與 Rainbow golden 一致；保留 namespace 才加 CMD 保證唯一。"""
+    if namespace == "minecraft":
+        return f"sunrise:{path}_cmd_{custom_model_data}"
+    return f"{namespace}:{path}"
 
 
 def _icon_name(namespace: str, path: str) -> str:
@@ -54,6 +57,15 @@ def _icon_rel(namespace: str, path: str) -> str:
     category = path.split("/")[0] if "/" in path else "item"
     leaf = path.split("/")[-1]
     return f"textures/{category}/{leaf}_icon"
+
+
+def _normalize_java_item(identifier: str) -> str:
+    """修正常見的 Java item model 檔名別名；不存在的原版 ID 不可交給 Geyser。"""
+    aliases = {
+        "minecraft:lodestone": "minecraft:compass",
+        "minecraft:lodestone_compass": "minecraft:compass",
+    }
+    return aliases.get(identifier, identifier)
 
 
 def convert_pack(pack_dir: str, out_dir: str, config: OutputConfig) -> Report:
@@ -90,8 +102,8 @@ def convert_pack(pack_dir: str, out_dir: str, config: OutputConfig) -> Report:
                     dst = os.path.join(pack_out, icon_rel + ".png")
                     os.makedirs(os.path.dirname(dst), exist_ok=True)
                     shutil.copy(abs_tex, dst)
-                bedrock_id = _bedrock_item_id(model.namespace, model.path)
-                item_to_entries[entry.vanilla_item].append(
+                bedrock_id = _bedrock_item_id(model.namespace, model.path, entry.custom_model_data)
+                item_to_entries[_normalize_java_item(entry.vanilla_item)].append(
                     builders.mapping_entry(bedrock_id, icon_name, entry.custom_model_data)
                 )
                 item_texture_data[icon_name] = {"textures": icon_rel}
@@ -179,8 +191,8 @@ def convert_pack(pack_dir: str, out_dir: str, config: OutputConfig) -> Report:
         # --- mapping + icon ---
         icon_name = _icon_name(model.namespace, model.path)
         icon_rel = _icon_rel(model.namespace, model.path)
-        bedrock_id = _bedrock_item_id(model.namespace, model.path)
-        item_to_entries[entry.vanilla_item].append(
+        bedrock_id = _bedrock_item_id(model.namespace, model.path, entry.custom_model_data)
+        item_to_entries[_normalize_java_item(entry.vanilla_item)].append(
             builders.mapping_entry(bedrock_id, icon_name, entry.custom_model_data)
         )
         item_texture_data[icon_name] = {"textures": icon_rel}
