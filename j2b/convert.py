@@ -32,10 +32,19 @@ def _write_json(path: str, data: Any) -> None:
         json.dump(data, handle, ensure_ascii=False, indent=1)
 
 
+def _custom_namespace(namespace: str) -> str:
+    """Bedrock 自訂 item ID 不允許使用保留的 minecraft namespace。"""
+    return "sunrise" if namespace == "minecraft" else namespace
+
+
+def _bedrock_item_id(namespace: str, path: str) -> str:
+    return f"{_custom_namespace(namespace)}:{path}"
+
+
 def _icon_name(namespace: str, path: str) -> str:
     """icon 識別名：qualityarmory + gun/ak47 -> qualityarmory.gun_ak47_icon。"""
     flat = path.replace("/", "_")
-    return f"{namespace}.{flat}_icon"
+    return f"{_custom_namespace(namespace)}.{flat}_icon"
 
 
 def _icon_rel(namespace: str, path: str) -> str:
@@ -81,7 +90,7 @@ def convert_pack(pack_dir: str, out_dir: str, config: OutputConfig) -> Report:
                     dst = os.path.join(pack_out, icon_rel + ".png")
                     os.makedirs(os.path.dirname(dst), exist_ok=True)
                     shutil.copy(abs_tex, dst)
-                bedrock_id = f"{model.namespace}:{model.path}"
+                bedrock_id = _bedrock_item_id(model.namespace, model.path)
                 item_to_entries[entry.vanilla_item].append(
                     builders.mapping_entry(bedrock_id, icon_name, entry.custom_model_data)
                 )
@@ -94,8 +103,9 @@ def convert_pack(pack_dir: str, out_dir: str, config: OutputConfig) -> Report:
             report.skipped.append(f"{entry.model_ref} (CMD {entry.custom_model_data}): 無 elements 且無 layer0")
             continue
 
-        geo_id = builders.model_identifier(model.namespace, model.path)
-        anim_base = builders.anim_base(model.namespace, model.path)
+        output_namespace = _custom_namespace(model.namespace)
+        geo_id = builders.model_identifier(output_namespace, model.path)
+        anim_base = builders.anim_base(output_namespace, model.path)
 
         # --- 貼圖：收集 model 用到的 texkey -> 檔案，決定單貼圖 or atlas ---
         texkeys = textures.used_texkeys(model.elements)
@@ -150,7 +160,7 @@ def convert_pack(pack_dir: str, out_dir: str, config: OutputConfig) -> Report:
 
         # --- attachable ---
         att = builders.build_attachable(
-            model.namespace, model.path, geo_id, default_texture, config
+            output_namespace, model.path, geo_id, default_texture, config
         )
         _write_json(
             os.path.join(pack_out, "attachables", f"{anim_base}.json"),
@@ -169,7 +179,7 @@ def convert_pack(pack_dir: str, out_dir: str, config: OutputConfig) -> Report:
         # --- mapping + icon ---
         icon_name = _icon_name(model.namespace, model.path)
         icon_rel = _icon_rel(model.namespace, model.path)
-        bedrock_id = f"{model.namespace}:{model.path}"
+        bedrock_id = _bedrock_item_id(model.namespace, model.path)
         item_to_entries[entry.vanilla_item].append(
             builders.mapping_entry(bedrock_id, icon_name, entry.custom_model_data)
         )
