@@ -179,7 +179,13 @@ def _convert_sounds(assets_root: str, pack_out: str, report: Report) -> None:
                     copied += 1
                 names.append(f"sounds/custom/{filename}")
         if names:
-            is_music = "music" in event_key or "record" in event_key
+            # 登入曲名稱本身不含 music/record；必須明確歸到 music，不能落到 neutral
+            #（neutral 受「友善生物」子音量控制，會造成主音量開啟仍無聲）。
+            is_music = (
+                event_key == "friends_wine"
+                or "music" in event_key
+                or "record" in event_key
+            )
             definitions[event_key] = {
                 "category": "music" if is_music else "neutral",
                 "min_distance": 0.0,
